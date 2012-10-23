@@ -32,23 +32,32 @@ Yes, this plugin embed the Google Groups on WordPress! You can see all discussio
 * Select and download it.
 * Activate the plugin through the 'Plugins' menu in WordPress.
 
-You are ready! see the example on screenshots section.   
+You are ready! Example on screenshots section.   
 
+= How to use it? =
+
+It’s very easy! You can add the group forum on your page in only three steps!
+
+   * Add page
+   * Set follow code on post editor [google_groups name="name-of-groups"]
+   * And now.. that’s all… go to the preview!
+
+= Configure it =
+
+If you want to control the view, you can add these attributes on shortcode
+
+* showsearch: whether to show an embedded search box on destination forum pages. (default is false)
+* showpopout: whether to show the “popout” button which lets the view be expanded to a full page, on destination forum pages
+* showtabs: whether to show tabs for changing views (e.g., to the Members view), on destination forum pages (default is false)
+* contenturl: the full URL to the page that hosts the target content view (not the current page — the one that’s configured to display a single forum, without specifying which forum)
+* width: the width of page (default is 100%)
+* height: the height of page (default is 800px)
 
 == Screenshots ==
 
-*Admin example*
-
 1. Screenshot Shortcode on page editor.
-3. Screenshot Configuration of widget. 
-
-*Frontend example*
-
-This is a example of shortcode, I embed the group “mixare-development” of [www.mixare.org](http://www.mixare.org) on my site
-
-[google_groups name="mixare-development"  width = '100%'  height = '800px'  showsearch = 'true'  showtabs = 'true'  hideforumtitle = 'true' hidesubject = 'true']
-
 2. Screenshot Shortcode in action.
+3. Screenshot Configuration of widget. 
 4. Screenshot Widget in action.
 
 == Frequently Asked Questions ==
