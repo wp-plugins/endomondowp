@@ -17,10 +17,10 @@ The [OdynoGoogleGroups](http://www.staniscia.net/odynogooglegroups/) embed the G
 * Google Group forum on WordPress page/post
 * Widget with last messages of group.
 
-= it's easy =
+= It's easy =
 
-To add gGroups on page/post add this shortcode [google-groups name="my-group-name"]
-To add widgets into sidebar - Go to Appearance -> Widgets -> Google Groups Widget
+* To add gGroups on page/post add this shortcode [google-groups name="my-group-name"]
+* To add widgets into sidebar - Go to Appearance -> Widgets -> Google Groups Widget
 
 
 == Installation ==
