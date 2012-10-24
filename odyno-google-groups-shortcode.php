@@ -19,6 +19,7 @@
 
 function odyno_google_groups_page_shortcode($param) {
   extract(shortcode_atts(array(
+              'id' => '',
               'name' => 'DEFAULT',
               'width' => '100%',
               'height' => '800px',
@@ -34,10 +35,10 @@ function odyno_google_groups_page_shortcode($param) {
     return 'Minimal information of tag: [google_groups name="name-of-group" ]';
   }
 
-  $out = '<iframe id="forum_embed" src="javascript:void(0)"  scrolling="no"  frameborder="0"
-          width="100%" height="600px"></iframe>
+  $out = '<iframe id="forum_embed'.$id.'" src="javascript:void(0)"  scrolling="no"  frameborder="0"
+          width="'.$width.'" height="'.$height.'"></iframe>
           <script type="text/javascript">
-             document.getElementById("forum_embed").src =
+             document.getElementById("forum_embed'.$id.'").src =
                    "https://groups.google.com/forum/embed/?place=forum/' . $name;
   $out .= "&showsearch=" . $showsearch;
   $out .= "&showtabs=" . $showtabs;

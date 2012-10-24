@@ -4,20 +4,24 @@ Tags: Google, Groups, embed, fusion
 Donate link: http://www.staniscia.net/donate
 Requires at least: 3.4.2
 Tested up to: 3.4.2
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Yes, this plugin embed the Google Groups on WordPress! 
+Yes, OdynoGoogleGroups embed the Google Groups on WordPress!
 
 == Description ==
 
-Yes, this plugin embed the Google Groups on WordPress! You can see all discussion on your article or WordPress page. All you must do is to add a shortcode on your page editor!
-
-*Features*
+(OdynoGoogleGroups)[http://www.staniscia.net/odynogooglegroups] embed the Google Groups on WordPress! You can see all discussion on your article or WordPress page. All you must do is to add a shortcode on your page editor!
 
 * Google Group forum on WordPress page/post
 * Widget with last messages of group.
+
+= it's easy ==
+
+To add gGroups on page/post add this shortcode [google-groups name="my-group-name"]
+To add widgets into sidebar - Go to Appearance -> Widgets -> Google Groups Widget
+
 
 == Installation ==
 
@@ -28,11 +32,11 @@ Yes, this plugin embed the Google Groups on WordPress! You can see all discussio
 
 = Automatic installation =
 
-* Search "Odyno Google Group" on "Plugins" -> "add new" page.
+* Go to Plugins -> add new and search "Odyno Google Group".
 * Select and download it.
 * Activate the plugin through the 'Plugins' menu in WordPress.
 
-You are ready! Example on screenshots section.   
+You are ready! For example I have embed the mixare-developement comunity on my test site adn you can see the effect on screenshots section.
 
 = How to use it? =
 
@@ -55,14 +59,14 @@ If you want to control the view, you can add these attributes on shortcode
 
 == Screenshots ==
 
-1. Screenshot Shortcode on page editor.
-2. Screenshot Shortcode in action.
-3. Screenshot Configuration of widget. 
-4. Screenshot Widget in action.
+1. Screenshot Shortcode on page editor (thanks to mixare.org)[http://www.mixare.org]
+2. Screenshot Shortcode in action (thanks to mixare.org)[http://www.mixare.org]
+3. Screenshot Configuration of widget (thanks to mixare.org)[http://www.mixare.org]
+4. Screenshot Widget in action (thanks to mixare.org)[http://www.mixare.org]
 
 == Frequently Asked Questions ==
 
-Actualy I don't have any FAQ from you! If you have any add comment [on site](www.staniscia.net/odynogooglegroup)
+Actualy I don't have any FAQ from you!<br> If you have any add comment [on site](http://www.staniscia.net/odynogooglegroups)
 
 == Credits ==
 
@@ -84,6 +88,9 @@ Actualy I don't have any FAQ from you! If you have any add comment [on site](www
 
 
 == Changelog ==
+
+= 0.0.2 =
+* Add help page on tools menu
 
 = 0.0.1 =
 * baseline to release
