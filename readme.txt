@@ -1,6 +1,6 @@
 === OdynoGoogleGroups ===
 Contributors: Alessandro Staniscia
-Tags: Google, Groups, embed, fusion
+Tags: google, google groups, ggroups, embed, fusion, bridge, rss, widget
 Donate link: http://www.staniscia.net/donate
 Requires at least: 3.4.2
 Tested up to: 3.4.2
@@ -14,6 +14,8 @@ Yes, OdynoGoogleGroups embed the Google Groups on WordPress!
 
 The [OdynoGoogleGroups](http://www.staniscia.net/odynogooglegroups/) embed the Google Groups on WordPress! You can see all discussion on your article or WordPress page. All you must do is to add a shortcode on your page editor!
 
+= features =
+
 * Google Group forum on WordPress page/post
 * Widget with last messages of group.
 
@@ -21,7 +23,6 @@ The [OdynoGoogleGroups](http://www.staniscia.net/odynogooglegroups/) embed the G
 
 * To add gGroups on page/post add this shortcode [google-groups name="my-group-name"]
 * To add widgets into sidebar - Go to Appearance -> Widgets -> Google Groups Widget
-
 
 == Installation ==
 
