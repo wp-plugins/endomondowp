@@ -1,6 +1,6 @@
-=== Odyno Google Groups ===
+=== Odyno GoogleGroups ===
 Contributors: Odyno
-Tags: google, google groups, ggroups, embed, fusion, bridge, rss, widget
+Tags: Google, google groups, ggroups, embed, fusion, bridge, rss, widget
 Donate link: http://www.staniscia.net/donate
 Requires at least: 3.4.2
 Tested up to: 3.4.2
