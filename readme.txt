@@ -1,5 +1,5 @@
-=== OdynoGoogleGroups ===
-Contributors: Alessandro Staniscia
+=== Odyno Google Groups ===
+Contributors: Odyno
 Tags: google, google groups, ggroups, embed, fusion, bridge, rss, widget
 Donate link: http://www.staniscia.net/donate
 Requires at least: 3.4.2
