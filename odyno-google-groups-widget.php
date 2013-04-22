@@ -1,5 +1,4 @@
 <?php
-
 /*  Copyright 2012  Alessandro Staniscia  (email : alessandro@staniscia.net)
 
     This program is free software; you can redistribute it and/or modify
