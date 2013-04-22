@@ -24,10 +24,10 @@ The [OdynoGoogleGroups](http://www.staniscia.net/odynogooglegroups/) embed the G
 
 = It's easy =
 
-To add gGroups on page/post add this shortcode,just swap “name-of-group” with your group name
-    [google-groups name="my-group-name"]
-To add widgets into sidebar
-    Go to Appearance -> Widgets -> Google Groups Widget
+*To add gGroups on page/post add this shortcode,just swap “name-of-group” with your group name
+[google-groups name="my-group-name"]
+*To add widgets into sidebar
+Go to Appearance -> Widgets -> Google Groups Widget
 
 == Installation ==
 Odyno Google Groups can be installed using integrated WordPress plugin installer or manually.
@@ -61,16 +61,16 @@ It’s very easy! You can add the group forum on your page in only three steps!
 
 If you want to control the view, you can add these attributes on shortcode
    
-    * id: unique id of groups (default is random number)
-    * name: name of groups (default is random number)
-    * width: the width of page (default is 100%)
-    * height: the height of page (default is 800px)
-    * domain: the name of domain of groups (default none)
-    * showsearch: whether to show an embedded search box on destination forum pages. (default is false)
-    * showpopout: whether to show the "popout" button which lets the view be expanded to a full page, on destination forum pages (default is true)
-    * hideforumtitle: if you want to show the forum title and description, false if you don't want to show the title or description (default is true)
-    * hidesubject:  if you want to hide the subject of the last post in My Forums view, false if you want to leave the subject visible (default is true)
-    * showtabs: whether to show tabs for changing views (e.g., to the Members view), on destination forum pages (default is false)
+* id: unique id of groups (default is random number)
+* name: name of groups (default is random number)
+* width: the width of page (default is 100%)
+* height: the height of page (default is 800px)
+* domain: the name of domain of groups (default none)
+* showsearch: whether to show an embedded search box on destination forum pages. (default is false)
+* showpopout: whether to show the "popout" button which lets the view be expanded to a full page, on destination forum pages (default is true)
+* hideforumtitle: if you want to show the forum title and description, false if you don't want to show the title or description (default is true)
+* hidesubject:  if you want to hide the subject of the last post in My Forums view, false if you want to leave the subject visible (default is true)
+* showtabs: whether to show tabs for changing views (e.g., to the Members view), on destination forum pages (default is false)
 
 
 
