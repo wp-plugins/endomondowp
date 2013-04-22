@@ -24,10 +24,8 @@ The [OdynoGoogleGroups](http://www.staniscia.net/odynogooglegroups/) embed the G
 
 = It's easy =
 
-*To add gGroups on page/post add this shortcode,just swap “name-of-group” with your group name
-[google-groups name="my-group-name"]
-*To add widgets into sidebar
-Go to Appearance -> Widgets -> Google Groups Widget
+* To add gGroups on page/post add this shortcode,just swap “name-of-group” with your group name [google-groups name="my-group-name"]
+* To add widgets into sidebar Go to Appearance -> Widgets -> Google Groups Widget
 
 == Installation ==
 Odyno Google Groups can be installed using integrated WordPress plugin installer or manually.
