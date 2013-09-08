@@ -1,10 +1,10 @@
-=== Odyno GoogleGroups ===
+﻿=== Odyno GoogleGroups ===
 Contributors: Odyno
 Tags: Google, google groups, ggroups, embed, fusion, bridge, rss, widget
 Donate link: http://www.staniscia.net/donate
 Requires at least: 3.4.2
 Tested up to: 3.4.2
-Stable tag: 0.0.3
+Stable tag: 0.0.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,7 +65,6 @@ If you want to control the view, you can add these attributes on shortcode
 * height: the height of page (default is 800px)
 * domain: the name of domain of groups (default none)
 * showsearch: whether to show an embedded search box on destination forum pages. (default is false)
-* showpopout: whether to show the "popout" button which lets the view be expanded to a full page, on destination forum pages (default is true)
 * hideforumtitle: if you want to show the forum title and description, false if you don't want to show the title or description (default is true)
 * hidesubject:  if you want to hide the subject of the last post in My Forums view, false if you want to leave the subject visible (default is true)
 * showtabs: whether to show tabs for changing views (e.g., to the Members view), on destination forum pages (default is false)
@@ -103,6 +102,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 = ToDo =
 * I18n
+
+= 0.0.4 =
+* Update google properties
+* Fix X-Frame-Options errors (Issue#1)
 
 = 0.0.3 =
 * Add setting link on plugin page

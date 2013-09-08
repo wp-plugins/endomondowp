@@ -61,7 +61,6 @@
                 <tr><td><code>height</code></td><td>the height of page (default is 800px)</td></tr>
                 <tr><td><code>domain</code></td><td>the name of domain of groups (default none)</td></tr>
                 <tr><td><code>showsearch</code></td><td>whether to show an embedded search box on destination forum pages. (default is false)</td></tr>
-                <tr><td><code>showpopout</code></td><td>whether to show the "popout" button which lets the view be expanded to a full page, on destination forum pages (default is true)</td></tr>
                 <tr><td><code>hideforumtitle</code></td><td>if you want to show the forum title and description, false if you don't want to show the title or description (default is true)</td></tr>
                 <tr><td><code>hidesubject</code></td><td> if you want to hide the subject of the last post in My Forums view, false if you want to leave the subject visible (default is true)</td></tr>
                 <tr><td><code>showtabs</code></td><td>whether to show tabs for changing views (e.g., to the Members view), on destination forum pages (default is false)</td></tr>

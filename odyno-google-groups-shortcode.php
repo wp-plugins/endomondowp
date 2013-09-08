@@ -24,6 +24,7 @@ add_shortcode('google_groups', 'odyno_google_groups_page_shortcode');
  * @return string
  */
 function odyno_google_groups_page_shortcode($param) {
+    
     extract(shortcode_atts(array(
                 'id' => uniqid("", true),
                 'name' => ODY_GOOGLE_GROUPS_NOS,
@@ -31,7 +32,6 @@ function odyno_google_groups_page_shortcode($param) {
                 'height' => '800px',
                 'showsearch' => 'false',
                 'showtabs' => 'false',
-                'showpopout' => 'true',
                 'hideforumtitle' => 'true',
                 'hidesubject' => 'true',
                 'domain' => ODY_GOOGLE_GROUPS_NOS
@@ -44,7 +44,7 @@ function odyno_google_groups_page_shortcode($param) {
         $out = 'Minimal information of tag: [google_groups name="name-of-group" ]';
     } else {
         $out = odyno_google_groups_page_shortcut_html($isContrib, $isSigned, $id,  $width, $height);
-        $out .= odyno_google_groups_page_shortcut_js($id, $name, $domain, $showsearch, $showtabs, $showpopout, $hideforumtitle, $hidesubject, $showsearch);
+        $out .= odyno_google_groups_page_shortcut_js($id, $name, $domain, $showsearch, $showtabs, $hideforumtitle, $hidesubject, $showsearch);
     }
 
     return $out;
@@ -69,12 +69,20 @@ function odyno_google_groups_page_shortcut_html($isContrib, $isSigned, $id, $wid
     $contribCode="";
 
     if ($isContrib){
-        $contribCode='<img style=\'display: none;\'src="http://www.staniscia.net/ogg/logo.php?t=gif" alt="logo" onerror="this.parentNode.removeChild(this)" />';
+        $contribCode='<img style=\'display: none;\' src="http://www.staniscia.net/ogg/logo.php?t=gif" alt="logo" onerror="this.parentNode.removeChild(this)" />';
     }
 
-    $out = '<div id="'.$id.'_odynoggroups_div" class="odynoggroups_div" >
-             <iframe id="'.$id.'_ogg_forum_embed" class="odynoggroups_iframe" src="javascript:void(0)" scrolling="no" frameborder="0"  width="' . $width . '" height="' . $height . '"></iframe>
-             <div style=\'' . $sign_inline_style . '\'>powered by <a href="http://www.staniscia.net/OdynoGoogleGroups/">Odyno gGroups</a>'.$contribCode.'</div>
+    $out = '
+			<div id="'.$id.'_odynoggroups_div" class="odynoggroups_div" >
+				<iframe id="'.$id.'_ogg_forum_embed" 
+			         class="odynoggroups_iframe" 
+			         src="javascript:void(0)" 
+					 scrolling="no" 
+					 frameborder="0"  
+					 width="' . $width . '" 
+					 height="' . $height . '">
+				</iframe>
+				<div style=\'' . $sign_inline_style . '\'>powered by <a href="http://www.staniscia.net/OdynoGoogleGroups/">Odyno gGroups</a>'.$contribCode.'</div>
            </div>';
 
     return $out;
@@ -86,7 +94,6 @@ function odyno_google_groups_page_shortcut_js(
     $domain,
     $showsearch,
     $showtabs,
-    $showpopout,
     $hideforumtitle,
     $hidesubject,
     $showsearch){
@@ -95,14 +102,14 @@ function odyno_google_groups_page_shortcut_js(
              document.getElementById("'.$id.'_ogg_forum_embed").src ="https://groups.google.com/forum/embed/?place=forum/' . $name;
     $out .= ($domain == ODY_GOOGLE_GROUPS_NOS ) ? '' : '&domain=' . $domain;
     $out .= "&theme=default";
+	$out .= "&fragments=true"; 
     $out .= "&showsearch=" . $showsearch;
     $out .= "&showtabs=" . $showtabs;
-    $out .= "&showpopout=" . $showpopout;
     $out .= "&hideforumtitle=" . $hideforumtitle;
     $out .= "&hidesubject=" . $hidesubject;
-    $out .= "&showsearch=" . $showsearch;
-    $out .= "&contenturl=" . urlencode(get_permalink());
-    $out .= '"</script>';
+	$out .= "&parenturl=\"+encodeURIComponent(window.location.href);";
+    //NO// $out .= "&contenturl=" . urlencode(get_permalink());
+    $out .= "\n</script>";
     return $out;
 }
 
