@@ -3,7 +3,7 @@
   Plugin Name: Odyno GoogleGroups
   Plugin URI: http://www.staniscia.net/odynogooglegroups/
   Description: The <a href="http://www.staniscia.net/odynogooglegroups/" target="_new">Odyno GoogleGroups</a> embed the Google Groups on WordPress! You can see all discussion on your article or WordPress page. All you must do is to add a shortcode on your page editor! The main feautures are:<br> 1) Google Group forum on WordPress page/post <br>2)Widget with last messages of group.
-  Version: 0.0.4
+  Version: 0.0.5
   Author: Alessandro Staniscia
   Author URI: http://www.staniscia.net
   License: GNU General Public License v2
@@ -30,6 +30,8 @@ define('ODY_GOOGLE_GROUPS_DIR', plugin_dir_path(__FILE__));
 
 include_once ODY_GOOGLE_GROUPS_DIR.'/install/odyno-google-groups-life-cycle.php';
 
+
+include_once ODY_GOOGLE_GROUPS_DIR.'/odyno-google-groups-lib.php';
 include_once ODY_GOOGLE_GROUPS_DIR.'/odyno-google-groups-shortcode.php';
 include_once ODY_GOOGLE_GROUPS_DIR.'/odyno-google-groups-widget.php';
 include_once ODY_GOOGLE_GROUPS_DIR.'/admin/odyno-google-groups-mgt.php';

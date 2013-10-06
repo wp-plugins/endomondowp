@@ -71,7 +71,7 @@
     </div>
 
     <?php screen_icon(); ?><h2> Options</h2>
-    <h3>Style</h3>
+    <h3>For designers...</h3>
     <div >
         <p>If you want customize the style of view, you can add css and use the following hook</p>
         <table class="widefat"    >
@@ -91,6 +91,72 @@
             </tr>
         </table>
         <div class="clear"></div>
+    </div>
+
+    <h3>For developer...</h3>
+    <div>
+        <p>You can use the Odyno Google Groups on your plugin! Otherwise you can use it on your current theme.
+            In according to Codex, you can modify the current theme with  <a href="http://codex.wordpress.org/Child_Themes" target="new">Child Themes « WordPress Codex</a>,
+            with a new <a href="http://codex.wordpress.org/Page_Templates" target="new">Page Templates « WordPress Codex </a> or simply modify directly the php file of theme.
+            In any of this case you can add a invocation of function <code>do_odyno_google_groups()</code> and you will have same action of shortcode.
+            Also the parameters of function are the same of shortcode and are shown below</p>
+            <pre style="border: 1px dotted gray">
+            /**
+            * This function returns the html code used to embed the Google Groups
+            *
+            * @param string $name,
+            * @param int $id = null,
+            * @param string $width = "100%",
+            * @param string $height = "800px",
+            * @param string $showsearch = "false",
+            * @param string $showtabs = "false",
+            * @param string $hideforumtitle = "true",
+            * @param string $hidesubject = "true",
+            * @param string $domain = null
+            *
+            * @return string The html Code
+            *
+            */
+            function do_odyno_google_groups($name, $id = null, $width = "100%", $height = "800px", $showsearch = "false",
+                        $showtabs = "false", $hideforumtitle = "true", $hidesubject = "true", $domain = null){...};
+            </pre>
+        <p>Example:</p><pre style="border: 1px dotted gray">
+            <?php echo htmlentities('
+                        [...]
+                        <div class="entry">
+                            <?php do_odyno_google_groups("selectivehedgingdiscussion"); ?>
+                            <?php the_content(__(\'More...\', \'picolight\')); ?>
+                            <?php wp_link_pages(); ?>
+                        </div>
+                        [...]
+                   ');
+            ?>
+        </pre>
+
+        <p>Otherwise on your plugin or on your <a href="http://codex.wordpress.org/Functions_File_Explained" target="new">function.php</a> you can add one hook to one of 4 action ( see <a href="http://codex.wordpress.org/Glossary#Action" target="new">Actions</a> ) and you can run your custom code.
+            The allowed action are show below and all action have the same parameter of do_odyno_google_groups function: </p>
+        <ol>
+            <li><code>pre_ogg_show</code> action. It's called before do_odyno_google_groups() function</li>
+            <li><code>post_ogg_show</code> action. It's called after do_odyno_google_groups()  function</li>
+            <li><code>pre_ogg_shortcode</code> action. It's called before invocation of all shortcode [google_groups]</li>
+            <li><code>post_ogg_shortcode</code> action. It's called after invocation of all shortcode [google_groups]</li>
+        </ol>
+
+        <p>Example:</p><pre style="border: 1px dotted gray">
+            [...]
+            add_action('pre_ogg_show','printMeFullArgs',10,9);
+            add_action('post_ogg_show','printMe',10,2);
+
+            function printMeFullArgs( $name, $id, $width, $height, $showsearch, $showtabs, $hideforumtitle, $hidesubject, $domain){
+                echo "Action: pre_ogg_show  Argument: $name, $id, $width, $height, $showsearch, $showtabs, $hideforumtitle, $hidesubject, $domain";
+            }
+
+            function printMe( $name, $id){
+                echo "Action: post_ogg_show  Argument:  $name, $id";
+            }
+            [...]
+        </pre>
+
     </div>
 
     <form method="post" action="options.php">
