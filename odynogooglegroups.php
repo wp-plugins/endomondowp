@@ -25,7 +25,7 @@
 */
 
 define('ODY_GOOGLE_GROUPS_NAME', 'Odyno GoogleGroups');
-define('ODY_GOOGLE_GROUPS_VERSION', '0.0.4');
+define('ODY_GOOGLE_GROUPS_VERSION', '0.0.5');
 define('ODY_GOOGLE_GROUPS_DIR', plugin_dir_path(__FILE__));
 
 include_once ODY_GOOGLE_GROUPS_DIR.'/install/odyno-google-groups-life-cycle.php';
