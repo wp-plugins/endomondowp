@@ -16,8 +16,11 @@ Embed Endomondo workout on Wordpress
 
 Bring your mobile on the track and get a complete training log. You can show your workout on Wordpress with  [EndomondoWP](http://www.staniscia.net/edomondowp/)
 
-To add EndomondoWP on page/post add the shortcode [endomondowp  user="XXXX"] and swap “XXXX” with your Endomondo ID  (you can found it on URL of your endopmondo profile es [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com))
-[Demo of plugin is here](http://www.staniscia.net/workouts/)
+Download the plugin from WordPress Site, install it end add EndomondoWP on page/post.
+
+It’s easy, add the shortcode [ endomondowp user=“XXXX” ] and swap “XXXX” with your Endomondo ID. You can found your id on URL of your endomondo profile [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com)
+
+You can find more (information)[(http://www.staniscia.net/endomondowp)] and [demo of plugin](http://www.staniscia.net/workout)  on plugin homesite.
 
 
 = It's opened to extensions =
