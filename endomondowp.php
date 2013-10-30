@@ -3,7 +3,7 @@
   Plugin Name: EndomondoWP
   Plugin URI: http://www.staniscia.net/endomondowp/
   Description: The <a href="http://www.staniscia.net/odynogooglegroups/" target="_new">EndomondoWP</a> embed the Endomondo on WordPress! You can see all workout on your article or WordPress page. All you must do is to add a shortcode on your page editor!
-  Version: 0.0.0
+  Version: 0.0.1
   Author: Alessandro Staniscia
   Author URI: http://www.staniscia.net
   License: GNU General Public License v2
