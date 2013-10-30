@@ -13,9 +13,14 @@ Embed Endomondo workout on Wordpress
 == Description ==
 
 [Endomondo](http://www.endomondo.com/) is a sports community based on free real-time GPS tracking of running, cycling, etc.
+
 Bring your mobile on the track and get a complete training log. You can show your workout on Wordpress with  [EndomondoWP](http://www.staniscia.net/edomondowp/)
-To add EndomondoWP on page/post add the shortcode [endomondowp  user="XXXX"] and swap “XXXX” with your Endomondo ID  (you can found it on URL of your endopmondo profile es [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com)  )
-[Demo of plugin is here](http://www.staniscia.net/workouts/)
+
+Download the plugin from WordPress Site, install it end add EndomondoWP on page/post.
+
+It’s easy, add the shortcode *[ endomondowp user=“XXXX” ]* and swap *“XXXX”* with your Endomondo ID. You can found your id on URL of your endomondo profile [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com)
+
+You can find more (information)(http://www.staniscia.net/endomondowp) and [demo of plugin](http://www.staniscia.net/workout)  on plugin homesite.
 
 
 = It's opened to extensions =
@@ -25,7 +30,7 @@ You can use it on your plugin or into "Page Template" (see [Page Templates « Wo
 
 If you want to control the view, you can add these attributes on shortcode
 
-* user: The endomondo User ID (es http://www.endomondo.com/profile/ 1234 / the code is 1234 )
+* user: The endomondo User ID 
 * type: The type of view (default is 'last-workout')
 * id: unique id of element (default is random number)
 * width: the width of page (default is 680)
@@ -37,10 +42,10 @@ If you want customize the style of view, you can add css and use the hook!!
 
 = For developer =
 
-You can use the EndomondoWP on your plugin! Otherwise you can use it on your current theme. In according to Codex, you can modify the current theme with "Child Themes « WordPress Codex",
-with a new "Page Templates « WordPress Codex" or simply modify directly the php file of theme. In any of this case you can add a invocation of function *do_endomondowp(...)* and you will have same action of shortcode.
+You can use the EndomondoWP on your plugin! Otherwise you can use it on your current theme. In according to Codex, you can modify the current theme with ["Child Themes « WordPress Codex"](http://codex.wordpress.org/Child_Themes),
+with a new ["Page Templates « WordPress Codex"](http://codex.wordpress.org/Page_Templates) or simply modify directly the php file of theme. In any of this case you can add a invocation of function *do_endomondowp(...)* and you will have same action of shortcode.
 Also the parameters of function are the same of shortcode.
-Otherwise on your plugin or on your function.php you can add one hook to one of 4 action and you can run your custom code.
+Otherwise on your plugin or on your *function.php* you can add one hook to one of 4 action and you can run your custom code.
 The allowed action are show below and all action have the same parameter of *do_endomondowp(...)* function:
 
 * pre_ewp_show action. It's called before *do_endomondowp(...)* function
@@ -73,6 +78,7 @@ EndomondoWP can be installed using integrated WordPress plugin installer or manu
 
 1. Screenshot Shortcode on page editor with  *type="last-workout"*
 2. Screenshot Shortcode on page editor with  *type="workout-list"*
+
 
 
 
