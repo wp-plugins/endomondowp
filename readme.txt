@@ -1,0 +1,110 @@
+﻿=== EndomondoWP ===
+Contributors: Odyno
+Tags: Endomondo Sport Traker embedding
+Donate link: http://www.staniscia.net/donate
+Requires at least: 3.4.2
+Tested up to: 3.6.1
+Stable tag: 0.0.0
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Embed Endomondo workout on Wordpress
+
+== Description ==
+
+[Endomondo](http://www.endomondo.com/) is a sports community based on free real-time GPS tracking of running, cycling, etc.
+Bring your mobile on the track and get a complete training log. You can show your workout on Wordpress with  [EndomondoWP](http://www.staniscia.net/edomondowp/)
+
+ [Demo](http://www.staniscia.net/workouts/)
+
+To add EndomondoWP on page/post add the shortcode [endomondowp  user="XXXX"] and swap “XXXX” with your Endomondo ID  (you can found it on URL of your endopmondo profile es http://www.endomondo.com/profile/XXXXXX )
+
+
+= It's opened to extensions =
+You can use it on your plugin or into "Page Template" (see [Page Templates « WordPress Codex ](http://codex.wordpress.org/Page_Templates) ) with the function do_endomondowp(...) or with 4 custom actions!!
+
+= Configure it =
+
+If you want to control the view, you can add these attributes on shortcode
+
+* user: The endomondo User ID (es http://www.endomondo.com/profile/1234 the code is 1234 )
+* type: The type of view (default is 'last-workout')
+* id: unique id of element (default is random number)
+* width: the width of page (default is 680)
+* height: the height of page (default is 600)
+
+
+= For designers =
+If you want customize the style of view, you can add css and use the hook!!
+
+= For developer =
+
+You can use the EndomondoWP on your plugin! Otherwise you can use it on your current theme. In according to Codex, you can modify the current theme with "Child Themes « WordPress Codex",
+with a new "Page Templates « WordPress Codex" or simply modify directly the php file of theme. In any of this case you can add a invocation of function *do_endomondowp(...)* and you will have same action of shortcode.
+Also the parameters of function are the same of shortcode.
+Otherwise on your plugin or on your function.php you can add one hook to one of 4 action and you can run your custom code.
+The allowed action are show below and all action have the same parameter of *do_endomondowp(...)* function:
+
+* pre_ewp_show action. It's called before *do_endomondowp(...)* function
+* post_ewp_show action. It's called after *do_endomondowp(...)* function
+* pre_ewp_shortcode action. It's called before invocation of all shortcode [endomondowp ...]
+* post_ewp_shortcode action. It's called after invocation of all shortcode [endomondowp ...]
+
+
+
+== Installation ==
+EndomondoWP can be installed using integrated WordPress plugin installer or manually.
+
+= Integrated WordPress plugin installer method =
+
+* Go to Plugins > Add New.
+* Under Search, type in ’Odyno Google Group’.
+* Click Install Now to install the WordPress Plugin.
+* A popup window will ask you to confirm your wish to install the Plugin.
+* If this is the first time you've installed a WordPress Plugin, enter the FTP login credential information. If you've installed a Plugin before, it will still have the login information.
+* Click Proceed to continue with the installation. The resulting installation screen will list the installation as successful or note any problems during the install.
+* If successful, click Activate Plugin to activate it, or Return to Plugin Installer for further actions.
+
+= Manual method =
+
+* Upload ’EndomondoWp ’ folder from EndomondoWp.zip file downloaded from EndomondoWp WordPress plugin directory page to the ’/wp-content/plugins/’ directory.
+* Activate ’EndomondoWp’ plugin through the ’Plugins’ menu in WordPress.
+
+
+== Screenshots ==
+
+1. Screenshot Shortcode on page editor with  *type="last-workout"*
+2. Screenshot Shortcode on page editor with  *type="workout-list"*
+
+
+
+== Credits ==
+
+
+Copyright 2012  Alessandro Staniscia  (email : alessandro@staniscia.net)
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License, version 2, as
+published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+
+== Changelog ==
+
+= ToDo =
+* I18n
+* Add other View
+
+= 0.0.0 =
+* Baseline to Release
+
+ == Upgrade Notice ==
+None.
