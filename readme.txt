@@ -1,10 +1,10 @@
 ﻿=== EndomondoWP ===
 Contributors: Odyno
-Tags: Endomondo Sport Traker embedding
+Tags: Endomondo, Sport, Traker, embedding
 Donate link: http://www.staniscia.net/donate
 Requires at least: 3.4.2
-Tested up to: 3.6.1
-Stable tag: 0.0.0
+Tested up to: 3.7.1
+Stable tag: 0.0.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,10 +14,8 @@ Embed Endomondo workout on Wordpress
 
 [Endomondo](http://www.endomondo.com/) is a sports community based on free real-time GPS tracking of running, cycling, etc.
 Bring your mobile on the track and get a complete training log. You can show your workout on Wordpress with  [EndomondoWP](http://www.staniscia.net/edomondowp/)
-
- [Demo](http://www.staniscia.net/workouts/)
-
-To add EndomondoWP on page/post add the shortcode [endomondowp  user="XXXX"] and swap “XXXX” with your Endomondo ID  (you can found it on URL of your endopmondo profile es http://www.endomondo.com/profile/XXXXXX )
+To add EndomondoWP on page/post add the shortcode [endomondowp  user="XXXX"] and swap “XXXX” with your Endomondo ID  (you can found it on URL of your endopmondo profile es [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com)  )
+[Demo of plugin is here](http://www.staniscia.net/workouts/)
 
 
 = It's opened to extensions =
@@ -27,7 +25,7 @@ You can use it on your plugin or into "Page Template" (see [Page Templates « Wo
 
 If you want to control the view, you can add these attributes on shortcode
 
-* user: The endomondo User ID (es http://www.endomondo.com/profile/1234 the code is 1234 )
+* user: The endomondo User ID (es http://www.endomondo.com/profile/ 1234 / the code is 1234 )
 * type: The type of view (default is 'last-workout')
 * id: unique id of element (default is random number)
 * width: the width of page (default is 680)
@@ -58,7 +56,7 @@ EndomondoWP can be installed using integrated WordPress plugin installer or manu
 = Integrated WordPress plugin installer method =
 
 * Go to Plugins > Add New.
-* Under Search, type in ’Odyno Google Group’.
+* Under Search, type in ’EndomondoWP’.
 * Click Install Now to install the WordPress Plugin.
 * A popup window will ask you to confirm your wish to install the Plugin.
 * If this is the first time you've installed a WordPress Plugin, enter the FTP login credential information. If you've installed a Plugin before, it will still have the login information.
@@ -102,6 +100,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 = ToDo =
 * I18n
 * Add other View
+
+= 0.0.1 =
+* Review Baseline
 
 = 0.0.0 =
 * Baseline to Release

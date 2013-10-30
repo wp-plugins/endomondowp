@@ -26,7 +26,7 @@
 
 define('EWP_NAME', 'EndomondoWP');
 define('EWP_SYS_NAME', 'endomondowp');
-define('EWP_VERSION', '0.0.0');
+define('EWP_VERSION', '0.0.1');
 define('EWP_DIR', plugin_dir_path(__FILE__));
 
 define('EWP_LAST_WORKOUT',"last-workout");
