@@ -20,7 +20,7 @@ Download the plugin from WordPress Site, install it end add EndomondoWP on page/
 
 It’s easy, add the shortcode *[ endomondowp user=“XXXX” ]* and swap *“XXXX”* with your Endomondo ID. You can found your id on URL of your endomondo profile [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com)
 
-You can find more (information)(http://www.staniscia.net/endomondowp) and [demo of plugin](http://www.staniscia.net/workout)  on plugin homesite.
+You can find more [info](http://www.staniscia.net/endomondowp) and [demo of plugin](http://www.staniscia.net/workout)  on plugin homesite.
 
 
 = It's opened to extensions =
