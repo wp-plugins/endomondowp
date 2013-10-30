@@ -13,8 +13,10 @@ Embed Endomondo workout on Wordpress
 == Description ==
 
 [Endomondo](http://www.endomondo.com/) is a sports community based on free real-time GPS tracking of running, cycling, etc.
+
 Bring your mobile on the track and get a complete training log. You can show your workout on Wordpress with  [EndomondoWP](http://www.staniscia.net/edomondowp/)
-To add EndomondoWP on page/post add the shortcode [endomondowp  user="XXXX"] and swap “XXXX” with your Endomondo ID  (you can found it on URL of your endopmondo profile es [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com)  )
+
+To add EndomondoWP on page/post add the shortcode [endomondowp  user="XXXX"] and swap “XXXX” with your Endomondo ID  (you can found it on URL of your endopmondo profile es [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com))
 [Demo of plugin is here](http://www.staniscia.net/workouts/)
 
 
