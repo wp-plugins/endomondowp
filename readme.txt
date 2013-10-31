@@ -16,9 +16,9 @@ Embed Endomondo workout on Wordpress
 
 Bring your mobile on the track and get a complete training log. You can show your workout on Wordpress with  [EndomondoWP](http://www.staniscia.net/edomondowp/)
 
-Download the plugin from WordPress Site, install it end add EndomondoWP on page/post.
+Download the plugin from WordPress Site, install it and add EndomondoWP on page/post.
 
-It’s easy, add the shortcode *[ endomondowp user=“XXXX” ]* and swap *“XXXX”* with your Endomondo ID. You can found your id on URL of your endomondo profile [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com)
+It’s easy, add the shortcode *[ endomondowp user=“XXXX” ]* and swap *“XXXX”* with your Endomondo ID. You can find your id on URL of your endomondo profile [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com)
 
 You can find more [info](http://www.staniscia.net/endomondowp) and [demo of plugin](http://www.staniscia.net/workout)  on plugin homesite.
 
@@ -38,7 +38,7 @@ If you want to control the view, you can add these attributes on shortcode
 
 
 = For designers =
-If you want customize the style of view, you can add css and use the hook!!
+If you want to customize the style of view, you can add css and use the hook!!
 
 = For developer =
 
@@ -46,7 +46,7 @@ You can use the EndomondoWP on your plugin! Otherwise you can use it on your cur
 with a new ["Page Templates « WordPress Codex"](http://codex.wordpress.org/Page_Templates) or simply modify directly the php file of theme. In any of this case you can add a invocation of function *do_endomondowp(...)* and you will have same action of shortcode.
 Also the parameters of function are the same of shortcode.
 Otherwise on your plugin or on your *function.php* you can add one hook to one of 4 action and you can run your custom code.
-The allowed action are show below and all action have the same parameter of *do_endomondowp(...)* function:
+The allowed action are show below and every action have the same parameter of *do_endomondowp(...)* function:
 
 * pre_ewp_show action. It's called before *do_endomondowp(...)* function
 * post_ewp_show action. It's called after *do_endomondowp(...)* function
