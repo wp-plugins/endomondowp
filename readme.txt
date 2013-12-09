@@ -126,6 +126,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 = ToDo =
 * I18n
 
+= 0.0.6-SNAPSHOT =
+* Update URL for data retrieve of Widget
+
 = 0.0.5 =
 * Add public function do_odyno_google_groups()
 * Add pre_ogg_show action. It's called before do_odyno_google_groups() function

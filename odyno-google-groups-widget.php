@@ -33,13 +33,23 @@ class ODYNO_Google_Groups_Widget extends WP_Widget {
     extract($args);
     $title = apply_filters('widget_title', $instance['title']);
     $name = $instance['name'];
+	
+	//Lower case everything
+    $name = strtolower($name);
+    //Make alphanumeric (removes all other characters)
+    $name = preg_replace("/[^a-z0-9_\s-]/", "", $name);
+    //Clean up multiple dashes or whitespaces
+    $name = preg_replace("/[\s-]+/", " ", $name);
+    //Convert whitespaces and underscore to dash
+    $name = preg_replace("/[\s_]/", "-", $name);
+	
     $num_field = $instance['num_field'];
     echo $before_widget;
     if ($title)
       echo $before_title . $title . $after_title;
 
     wp_widget_rss_output(array(
-        'url' => 'https://groups.google.com/group/'.$name.'/feed/rss_v2_0_msgs.xml?num=7', //put your feed URL here
+		'url' => 'https://groups.google.com/forum/feed/'.$name.'/msgs/rss.xml?num=7', //put your feed URL here
         'title' => $title, // Your feed title
         'items' => $num_field, //how many posts to show
         'show_summary' => 1, // 0 = false and 1 = true
