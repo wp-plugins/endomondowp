@@ -42,7 +42,7 @@
                     <div class="postbox">
                         <div class="handlediv" title="Click to toggle"><br/><br/></div>
                         <h3 class="hndle">
-                            <?php _n("Translator","Translators",1,'odynogooglegroups'); ?><br/>
+                            <?php _e("Translator","odynogooglegroups"); ?><br/>
                         </h3>
                         <div class="inside">
                             <a class="sm_button sm_it" href="mailto://alessandro@staniscia.net" target="_blank">Alessandro Staniscia</a>

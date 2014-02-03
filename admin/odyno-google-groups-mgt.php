@@ -30,7 +30,7 @@ function ody_gg_plugin_admin_menu() {
 
     $hook_suffix = add_options_page(
             'Odyno gGroups Preference', // page Title
-            'Odyno gGroups Options', // menu Link
+            'Odyno gGroups', // menu Link
             'manage_options', //Capability
             ODY_GOOGLE_GROUPS_SETTINGS_PAGE, //ID
             'ody_gg_plugin_load_tools_page' // funzione
