@@ -24,9 +24,9 @@ function odyno_add_wp_google_groups_widget() {
 class ODYNO_Google_Groups_Widget extends WP_Widget {
 
   function ODYNO_Google_Groups_Widget() {
-    $widget_ops = array('classname' => 'wpGoogleGroups', 'description' => __('A widget that displays the last google groups message ', 'example'));
+    $widget_ops = array('classname' => 'wpGoogleGroups', 'description' => __('A widget that displays the last google groups message ' , 'odynogooglegroups' ));
     $control_ops = array('width' => 300, 'height' => 350, 'id_base' => 'odyno-google-groups-widget');
-    $this->WP_Widget('odyno-google-groups-widget', __('Google Group Widget', 'Google Group Widget'), $widget_ops, $control_ops);
+    $this->WP_Widget('odyno-google-groups-widget', __('Google Group Widget' , 'odynogooglegroups' ), $widget_ops, $control_ops);
   }
 
   function widget($args, $instance) {
@@ -76,15 +76,15 @@ class ODYNO_Google_Groups_Widget extends WP_Widget {
     $instance = wp_parse_args((array) $instance, $defaults);
 ?>
     <p>
-      <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'example'); ?></label><br>
+      <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:' , 'odynogooglegroups' ); ?></label><br>
       <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo $instance['title']; ?>"  />
     </p>
     <p>
-      <label for="<?php echo $this->get_field_id('name'); ?>"><?php _e('Google Group Name:', 'example'); ?></label><br>
+      <label for="<?php echo $this->get_field_id('name'); ?>"><?php _e('Google Group Name:' , 'odynogooglegroups' ); ?></label><br>
       <input class="widefat" id="<?php echo $this->get_field_id('name'); ?>" name="<?php echo $this->get_field_name('name'); ?>" value="<?php echo $instance['name']; ?>"  />
     </p>
     <p>
-      <label for="<?php echo $this->get_field_id('num_field'); ?>"><?php _e('Number of message:', 'example'); ?></label><br>
+      <label for="<?php echo $this->get_field_id('num_field'); ?>"><?php _e('Number of message:' , 'odynogooglegroups' ); ?></label><br>
       <input class="widefat" id="<?php echo $this->get_field_id('num_field'); ?>" name="<?php echo $this->get_field_name('num_field'); ?>" value="<?php echo $instance['num_field']; ?>"  />
     </p>
 <?php

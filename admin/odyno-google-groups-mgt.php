@@ -42,7 +42,7 @@ function ody_gg_plugin_admin_menu() {
 
 function ody_gg_plugin_load_tools_page() {
     if (!current_user_can('manage_options')) {
-        wp_die(__('You do not have sufficient permissions to access this page.'));
+        wp_die(__('You do not have sufficient permissions to access this page.','odynogooglegroups'));
     }
     include(ODY_GOOGLE_GROUPS_DIR . '/admin/odgogrp-html-promote-bar.php');
 }
@@ -85,14 +85,14 @@ function ody_gg_plugin_settings_fields() {
     //Build new Section
     add_settings_section(
         ODY_GG_SETTINGS . "_ADV",                 //String for use in the 'id' attribute of tags.
-        "Advertise",                              //Title of the section
+        __('Advertise','odynogooglegroups'),                              //Title of the section
         'odygg_advertise_sections_descriptions',  //Function that fills the section with the desired content. The function should echo its output.
         ODY_GOOGLE_GROUPS_SETTINGS_PAGE           //The type of settings page on which to show the section
     );
 
     add_settings_field(
         ODY_GG_SHOW_SIGNE,                        //String for use in the 'id' attribute of tags.
-        'Show a little and invisible sign of this plugin ( Thanks! )',           // Title of the field.
+        __('Show a little and invisible sign of this plugin ( Thanks! )','odynogooglegroups'),           // Title of the field.
         'odygg_setting_show_signe_html',          //Function that fills the field with the desired inputs as part of the larger form. Name and id of the input should match the $id given to this function. The function should echo its output.
         ODY_GOOGLE_GROUPS_SETTINGS_PAGE,          //The type of settings page on which to show the field
         ODY_GG_SETTINGS . "_ADV"                  //The section of the settings page in which to show the box (default or a section you added with add_settings_section, look at the page in the source to see what the existing ones are.
@@ -100,7 +100,7 @@ function ody_gg_plugin_settings_fields() {
 
     add_settings_field(
         ODY_GG_ENABLED_ANALITYC,
-        'Enable the tracking of this WordPress installation with anonymous data.',
+        __('Enable the tracking of this WordPress installation with anonymous data.','odynogooglegroups'),
         'odygg_setting_enable_analitycs_html',
         ODY_GOOGLE_GROUPS_SETTINGS_PAGE,
         ODY_GG_SETTINGS . "_ADV"
@@ -115,7 +115,7 @@ function ody_gg_plugin_settings_fields() {
  * Description of option section
  */
 function odygg_advertise_sections_descriptions() {
-    echo '';
+    echo "";
 }
 
 /**

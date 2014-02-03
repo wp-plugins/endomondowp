@@ -1,0 +1,270 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: odynogooglegroups\n"
+"POT-Creation-Date: 2014-02-03 17:03+0100\n"
+"PO-Revision-Date: 2014-02-03 17:17+0100\n"
+"Last-Translator: Alessandro Staniscia <alessandro@staniscia.net>\n"
+"Language-Team: Alessandro Staniscia <alessandro@staniscia.net>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../odyno-google-groups-lib.php:110
+msgid ""
+"powered by <a href=\\\"http://www.staniscia.net/OdynoGoogleGroups/\\\">Odyno "
+"gGroups</a>"
+msgstr ""
+"powered by <a href=\\\"http://www.staniscia.net/OdynoGoogleGroups/\\\">Odyno "
+"gGroups</a>"
+
+#: ../odyno-google-groups-widget.php:27
+msgid "A widget that displays the last google groups message "
+msgstr "Widget che mostra gli ultimi messaggi presenti su Google Groups"
+
+#: ../odyno-google-groups-widget.php:29
+msgid "Google Group Widget"
+msgstr "Google Group Widget"
+
+#: ../odyno-google-groups-widget.php:79
+msgid "Title:"
+msgstr "Titolo:"
+
+#: ../odyno-google-groups-widget.php:83
+msgid "Google Group Name:"
+msgstr "Nome del gruppo su Google :"
+
+#: ../odyno-google-groups-widget.php:87
+msgid "Number of message:"
+msgstr "Numero di messaggi:"
+
+#: ../odynogooglegroups.php:31
+msgid "TestLanguage"
+msgstr "LANGUAGE ITA"
+
+#: ../admin/odgogrp-html-promote-bar.php:21
+msgid "Information"
+msgstr "Informazioni"
+
+#: ../admin/odgogrp-html-promote-bar.php:34
+msgid "Plugin Homepage"
+msgstr "Sito del plugin"
+
+#: ../admin/odgogrp-html-promote-bar.php:35
+msgid "Live demo"
+msgstr "Live demo"
+
+#: ../admin/odgogrp-html-promote-bar.php:36
+msgid "Suggest a Feature"
+msgstr "Suggerimenti"
+
+#: ../admin/odgogrp-html-promote-bar.php:37
+msgid "Report a Bug"
+msgstr "Segnala un errore"
+
+#: ../admin/odgogrp-html-promote-bar.php:38
+msgid "Rate the plugin on WordPress.org"
+msgstr "Valuta questo plugin su  WordPress.org"
+
+#: ../admin/odgogrp-html-promote-bar.php:54
+msgid ""
+"You can add the group forum on your page with this shortcode, just swap "
+"\"name-of-group\" with your group name <code>[google_groups name=\"name-of-"
+"groups\"]</code> and if you have your groups on private domain you can add "
+"the attribute \"domain\" to resolve your custom instance, for example: "
+"<code>[google_groups name=\"...\" domain=\"staniscia.net\"]</code> If you "
+"want to control the view, you can add these attributes on shortcode"
+msgstr ""
+"Tramite questo plugin tu puoi  aggiungere il tuo gruppo google  grazie al  "
+"seguente shortcode <code>[google_groups name=\"name-of-groups\"]</code> "
+"naturalmente basta sostituire  \"name-of-group\" con il nome del tuo "
+"gruppo.  Se il tuo gruppo è nascosto oppure è impostato su un \"private "
+"domian\" allora bisognerà aggiungere l'attributo  \"domain\", per "
+"esempio<code>[google_groups name=\"...\" domain=\"staniscia.net\"]</code>. "
+"Altri attributi sono presnti e possono essere utilizzati per controllare la "
+"visualizzazione, ecco la lista completa:"
+
+#: ../admin/odgogrp-html-promote-bar.php:56
+#: ../admin/odgogrp-html-promote-bar.php:71
+msgid "Options"
+msgstr "Opzioni"
+
+#: ../admin/odgogrp-html-promote-bar.php:56
+msgid "Description"
+msgstr "Descrizione"
+
+#: ../admin/odgogrp-html-promote-bar.php:57
+msgid "unique id of groups (default is random number)"
+msgstr "id univoco del gruppo ( default è un numero causale autogenerato)"
+
+#: ../admin/odgogrp-html-promote-bar.php:58
+msgid "name of groups (default is random number)"
+msgstr "nome del gruppo"
+
+#: ../admin/odgogrp-html-promote-bar.php:59
+msgid "the width of page (default is 100%)"
+msgstr "larghezza dello spazio occupato dal plugin ( default 100% )"
+
+#: ../admin/odgogrp-html-promote-bar.php:60
+msgid "the height of page (default is 800px)"
+msgstr "indica l'altezza in pixle occupato dal plugin ( default  800px)"
+
+#: ../admin/odgogrp-html-promote-bar.php:61
+msgid "the name of domain of groups (default none)"
+msgstr "Il nome del dominio dove è collocato il gruppo ( default niente )"
+
+#: ../admin/odgogrp-html-promote-bar.php:62
+msgid ""
+"whether to show an embedded search box on destination forum pages. (default "
+"is false)"
+msgstr "vine visualizzata una casella di ricerca (default è false)"
+
+#: ../admin/odgogrp-html-promote-bar.php:63
+msgid ""
+"if you want to show the forum title and description, false if you don't want "
+"to show the title or description (default is true)"
+msgstr ""
+"se vuoi aggiungere il titolo del forum e la descrizione, false se non vuoi "
+"mostrare ne titolo ne descrizione (default true)"
+
+#: ../admin/odgogrp-html-promote-bar.php:64
+msgid ""
+"if you want to hide the subject of the last post in My Forums view, false if "
+"you want to leave the subject visible (default is true)"
+msgstr ""
+"se vuoi nascondere il soggetto del post, false se vuoi mostrare il soggetto "
+"(default true)"
+
+#: ../admin/odgogrp-html-promote-bar.php:65
+msgid ""
+"whether to show tabs for changing views (e.g., to the Members view), on "
+"destination forum pages (default is false)"
+msgstr ""
+"se visualizzare le schede per cambiare vista (ese: vista menbri) nelle "
+"pagine di destinazione del forum (di default è false)"
+
+#: ../admin/odgogrp-html-promote-bar.php:72
+msgid "For designers..."
+msgstr "Per i designers..."
+
+#: ../admin/odgogrp-html-promote-bar.php:74
+msgid ""
+"If you want customize the style of view, you can add css and use the "
+"following hook"
+msgstr ""
+"Se si desidera personalizzare lo stile di visualizzazione, oppure aggiungere "
+"css, utilizzando i seguenti hook:"
+
+#: ../admin/odgogrp-html-promote-bar.php:76
+msgid "The short code"
+msgstr "Short code"
+
+#: ../admin/odgogrp-html-promote-bar.php:76
+msgid "HTML"
+msgstr "HTML"
+
+#: ../admin/odgogrp-html-promote-bar.php:94
+msgid "For developer..."
+msgstr "Per gli sviluppatori"
+
+#: ../admin/odgogrp-html-promote-bar.php:97
+msgid ""
+"You can use the Odyno Google Groups on your plugin! Otherwise you can use it "
+"on your current theme.\n"
+"            In according to Codex, you can modify the current theme with  <a "
+"href=\"http://codex.wordpress.org/Child_Themes\" target=\"new\">Child Themes "
+"« WordPress Codex</a>,\n"
+"            with a new <a href=\"http://codex.wordpress.org/Page_Templates\" "
+"target=\"new\">Page Templates « WordPress Codex </a> or simply modify "
+"directly the php file of theme.\n"
+"            In any of this case you can add a invocation of function "
+"<code>do_odyno_google_groups()</code> and you will have same action of "
+"shortcode.\n"
+"            Also the parameters of function are the same of shortcode and "
+"are shown below"
+msgstr ""
+"Tu puoi usare Odyno  google groups all'interno del tuo plugin! Oppure "
+"all'interno del  tema corrente. I riferimento a quanto scritto su Codex, "
+"puoi farlo con  i <a href=\"http://codex.wordpress.org/Child_Themes\" target="
+"\"new\">Child Themes « WordPress Codex</a>, con un <a href=\"http://codex."
+"wordpress.org/Page_Templates\" target=\"new\">Page Templates « WordPress "
+"Codex </a> oppure direttamente nel file php del tema (ma questo è altamente "
+"sconsigliato ;). In tutti questi casi puoi invocare la funzione "
+"<code>do_odyno_google_groups()</code> per ottenere lo stesso identico "
+"risultato dello shortcode! Anche i paramentri di questa funzione sono "
+"identici allo shortcode e sono mostrati qui di seguito:"
+
+#: ../admin/odgogrp-html-promote-bar.php:123
+#: ../admin/odgogrp-html-promote-bar.php:147
+msgid "Example:"
+msgstr "Esempio:"
+
+#: ../admin/odgogrp-html-promote-bar.php:137
+msgid ""
+"Otherwise on your plugin or on your <a href=\"http://codex.wordpress.org/"
+"Functions_File_Explained\" target=\"new\">function.php</a> you can add one "
+"hook to one of 4 action ( see <a href=\"http://codex.wordpress.org/"
+"Glossary#Action\" target=\"new\">Actions</a> ) and you can run your custom "
+"code.\n"
+"            The allowed action are show below and all action have the same "
+"parameter of do_odyno_google_groups function:"
+msgstr ""
+"E' possibile inserire tue personalizzazioni  sia nel tuo  plugin (oppure nel "
+"tuo <a href=\"http://codex.wordpress.org/Functions_File_Explained\" target="
+"\"new\">function.php</a>) tramite 4 differenti azioni ( se non sai di cosa "
+"sto parlando  guarda le  <a href=\"http://codex.wordpress.org/Glossary#Action"
+"\" target=\"new\">Actions su Codex</a> ).Tutte le azioni hanno gli stessi "
+"parametri della funzione <code>do_odyno_google_groups()</code> e sono:"
+
+#: ../admin/odgogrp-html-promote-bar.php:141
+msgid " It's called before do_odyno_google_groups() function"
+msgstr ""
+"Viene invocato prima che venga chiamata la funzione  do_odyno_google_groups()"
+
+#: ../admin/odgogrp-html-promote-bar.php:142
+msgid " It's called after do_odyno_google_groups()  function"
+msgstr ""
+"Viene invocato dopo  che è stata chiamata la funzione  "
+"do_odyno_google_groups()"
+
+#: ../admin/odgogrp-html-promote-bar.php:143
+msgid " It's called before invocation of all shortcode [google_groups]"
+msgstr "Viene invocato prima dello shortcode [google_groups]"
+
+#: ../admin/odgogrp-html-promote-bar.php:144
+msgid " It's called after invocation of all shortcode [google_groups]"
+msgstr "E' incovato dopo l'invocazione dello shortcode [google_groups]"
+
+#: ../admin/odgogrp-html-promote-bar.php:168
+msgid "Save options"
+msgstr "Salva le opzioni"
+
+#: ../admin/odyno-google-groups-mgt.php:45
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+"Attenzione: non hai i permessi suffigienti per accedere a questa parte del "
+"sito."
+
+#: ../admin/odyno-google-groups-mgt.php:88
+msgid "Advertise"
+msgstr "Advertise"
+
+#: ../admin/odyno-google-groups-mgt.php:95
+msgid "Show a little and invisible sign of this plugin ( Thanks! )"
+msgstr "Mostra un piccola e invisibile firma ( Grazie! )"
+
+#: ../admin/odyno-google-groups-mgt.php:103
+msgid "Enable the tracking of this WordPress installation with anonymous data."
+msgstr "Abilita il monitoraggio di questa installazione ( solo dati anonimi! )"
+
+#~ msgid "Translation"
+#~ msgstr "Traduttori"
+
+#~ msgid "Settings"
+#~ msgstr "Setting"

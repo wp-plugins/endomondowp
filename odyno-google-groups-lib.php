@@ -107,7 +107,7 @@ function odyno_google_groups_page_shortcut_html($isContrib, $isSigned, $id, $wid
 					 width="' . $width . '" 
 					 height="' . $height . '">
 				</iframe>
-				<div style=\'' . $sign_inline_style . '\'>powered by <a href="http://www.staniscia.net/OdynoGoogleGroups/">Odyno gGroups</a>' . $contribCode . '</div>
+				<div style=\'' . $sign_inline_style . '\'>'._e('powered by <a href=\"http://www.staniscia.net/OdynoGoogleGroups/\">Odyno gGroups</a>' , 'odynogooglegroups' ) . $contribCode . '</div>
            </div>';
 
     return $out;

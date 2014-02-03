@@ -14,12 +14,9 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-define('ODY_GOOGLE_GROUPS_URL', plugins_url()."/odynogooglegroups");
-define('ODY_GOOGLE_GROUPS_FILE', ABSPATH . PLUGINDIR . '/odynogooglegroups/odynogooglegroups.php');
-define('ODY_GOOGLE_GROUPS_NOS', '____NULL___');
-
 define('ODY_GG_SHOW_SIGNE', 'ody_gg_show_signe');
 define('ODY_GG_ENABLED_ANALITYC', 'ody_gg_enabled_analityc');
+
 
 
 register_activation_hook(ODY_GOOGLE_GROUPS_FILE, 'odyno_google_groups_install');

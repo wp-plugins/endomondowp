@@ -123,8 +123,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 == Changelog ==
 
-= ToDo =
-* I18n
+
+= 0.0.7 =
+* I18n - create all infrastructure
+* New Menu
 
 = 0.0.6 =
 * Update URL for data retrieve of Widget
