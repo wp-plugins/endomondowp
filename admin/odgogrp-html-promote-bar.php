@@ -17,9 +17,7 @@
 ?>
 
 <div class="wrap">
-
     <div id="icon-tools" class="icon32"><br> </div> <h2><?php _e('Information','odynogooglegroups')?></h2>
-
     <div id="poststuff">
         <div id="post-body" class="metabox-holder columns-2">
             <div id="postbox-container-1" class="postbox-container">
@@ -51,18 +49,18 @@
                 </div>
             </div>
 
-            <p><?php _e('You can add the group forum on your page with this shortcode, just swap "name-of-group" with your group name <code>[google_groups name="name-of-groups"]</code> and if you have your groups on private domain you can add the attribute "domain" to resolve your custom instance, for example: <code>[google_groups name="..." domain="staniscia.net"]</code> If you want to control the view, you can add these attributes on shortcode' ,'odynogooglegroups') ?></p>
+            <p><?php _e('You can add the group forum on your page with this shortcode,<br/><br/> <code>[google_groups name="name-of-groups"]</code><br/><br/> just swap "name-of-group" with your group name and if you have your groups on private domain you can add the attribute "domain" to resolve your custom instance, for example: <br/><br/><code>[google_groups name="..." domain="staniscia.net"]</code><br/><br/> If you want to control the view, you can add these attributes on shortcode' ,'odynogooglegroups') ?></p>
             <table  >
                 <tr><td><b><?php _e('Options','odynogooglegroups')?></b></td><td><b><?php _e('Description','odynogooglegroups')?></b></td></tr>
-                <tr><td><code>id</code></td><td><?php _e('unique id of groups (default is random number)','odynogooglegroups')?></td></tr>
-                <tr><td><code>name</code></td><td><?php _e('name of groups (default is random number)','odynogooglegroups')?></td></tr>
-                <tr><td><code>width</code></td><td><?php _e('the width of page (default is 100%)','odynogooglegroups')?></td></tr>
-                <tr><td><code>height</code></td><td><?php _e('the height of page (default is 800px)','odynogooglegroups')?></td></tr>
-                <tr><td><code>domain</code></td><td><?php _e('the name of domain of groups (default none)','odynogooglegroups')?></td></tr>
-                <tr><td><code>showsearch</code></td><td><?php _e('whether to show an embedded search box on destination forum pages. (default is false)','odynogooglegroups')?></td></tr>
-                <tr><td><code>hideforumtitle</code></td><td><?php _e('if you want to show the forum title and description, false if you don\'t want to show the title or description (default is true)','odynogooglegroups')?></td></tr>
-                <tr><td><code>hidesubject</code></td><td><?php _e('if you want to hide the subject of the last post in My Forums view, false if you want to leave the subject visible (default is true)','odynogooglegroups')?></td></tr>
-                <tr><td><code>showtabs</code></td><td><?php _e('whether to show tabs for changing views (e.g., to the Members view), on destination forum pages (default is false)','odynogooglegroups')?></td></tr>
+                <tr><td><code>id</code></td><td><?php _e('The unique id of groups (default is random number)','odynogooglegroups')?></td></tr>
+                <tr><td><code>name</code></td><td><?php _e('The name of groups (mandatory field)','odynogooglegroups')?></td></tr>
+                <tr><td><code>width</code></td><td><?php _e('The width space used by plugin (default is 100%)','odynogooglegroups')?></td></tr>
+                <tr><td><code>height</code></td><td><?php _e('The height space used by plugin (default is 800px)','odynogooglegroups')?></td></tr>
+                <tr><td><code>domain</code></td><td><?php _e('The name of domain of groups (default none)','odynogooglegroups')?></td></tr>
+                <tr><td><code>showsearch</code></td><td><?php _e('Used to show an embedded search box. (default is false)','odynogooglegroups')?></td></tr>
+                <tr><td><code>hideforumtitle</code></td><td><?php _e('If you want to show the forum title and description, false if you don\'t want to show the title or description (default is true)','odynogooglegroups')?></td></tr>
+                <tr><td><code>hidesubject</code></td><td><?php _e('If you want to hide the subject of the last post in My Forums view, false if you want to leave the subject visible (default is true)','odynogooglegroups')?></td></tr>
+                <tr><td><code>showtabs</code></td><td><?php _e('Used to show the tabs for changing views (e.g., to the Members view), on destination forum pages (default is false)','odynogooglegroups')?></td></tr>
             </table>
             <div class="clear"></div>
         </div>

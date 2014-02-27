@@ -21,7 +21,7 @@ Time: 11.33
 
  */
 
-namespace net\stanisca\ogg;
+
 
 class OGG_I18N_Handler
 {
@@ -30,20 +30,28 @@ class OGG_I18N_Handler
 
         add_action('plugins_loaded', array(&$this, 'i18n'));
 
-       // add_filter('the_content', array(&$this, 'test_translation'));
+        if (WP_DEBUG) add_action('wp_footer', array(&$this, 'dumpConfig'));
+
+        // add_filter('the_content', array(&$this, 'test_translation'));
 
     }
 
     function i18n()
     {
 
-        load_plugin_textdomain( 'odynogooglegroups', FALSE,  dirname( plugin_basename( ODY_GOOGLE_GROUPS_FILE ) ) . '/languages/' );
+        load_plugin_textdomain('odynogooglegroups', FALSE, dirname(plugin_basename(ODY_GOOGLE_GROUPS_FILE)) . '/languages/');
 
+    }
+
+    function dumpConfig()
+    {
+         echo "<!-- Translation: \n\nWPLANG: ".WPLANG."\nTestString: TestLanguage => " . __('TestLanguage', 'odynogooglegroups') . "\n\n -->";
     }
 
 }
 
 new OGG_I18N_Handler();
+
 
 
 

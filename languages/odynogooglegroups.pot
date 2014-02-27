@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: odynogooglegroups\n"
 "POT-Creation-Date: 2014-02-03 17:04+0100\n"
-"PO-Revision-Date: 2014-02-03 17:04+0100\n"
+"PO-Revision-Date: 2014-02-10 12:51+0100\n"
 "Last-Translator: Alessandro Staniscia <alessandro@staniscia.net>\n"
 "Language-Team: Alessandro Staniscia <alessandro@staniscia.net>\n"
 "Language: en\n"
@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../admin/odgogrp-html-promote-bar.php:21
 msgid "Information"
-msgstr ""
+msgstr "PIPPO"
 
 #: ../admin/odgogrp-html-promote-bar.php:34
 msgid "Plugin Homepage"

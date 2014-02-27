@@ -15,6 +15,9 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
+
+define(OGG_START_DEBUG_TAG, " -- OGG START SECTION -- ");
+define(OGG_STOP_DEBUG_TAG, " -- OGG END SECTION -- ");
 /**
  * This function return the html code used to embed the Google Groups
  *
@@ -32,7 +35,8 @@
  *
  */
 function do_odyno_google_groups($name, $id = null, $width = "100%", $height = "800px", $showsearch = "false",
-                                $showtabs = "false", $hideforumtitle = "true", $hidesubject = "true", $domain = null){
+                                $showtabs = "false", $hideforumtitle = "true", $hidesubject = "true", $domain = null)
+{
 
     if ($id == null) {
         $id = uniqid("", true);
@@ -51,7 +55,8 @@ function do_odyno_google_groups($name, $id = null, $width = "100%", $height = "8
  * @return string
  */
 function odyno_google_groups_get_page($name, $id = null, $width = "100%", $height = "800px", $showsearch = "false",
-                                      $showtabs = "false", $hideforumtitle = "true", $hidesubject = "true", $domain = null){
+                                      $showtabs = "false", $hideforumtitle = "true", $hidesubject = "true", $domain = null)
+{
 
     if ($id == null) {
         $id = uniqid("", true);
@@ -59,7 +64,7 @@ function odyno_google_groups_get_page($name, $id = null, $width = "100%", $heigh
 
     if ($domain == null) {
         $domain = ODY_GOOGLE_GROUPS_NOS;
-	}
+    }
 
     $isSigned = get_option(ODY_GG_SHOW_SIGNE, true);
     $isContrib = get_option(ODY_GG_ENABLED_ANALITYC, true);
@@ -68,6 +73,7 @@ function odyno_google_groups_get_page($name, $id = null, $width = "100%", $heigh
         $out = 'Minimal information of tag: [google_groups name="name-of-group" ]';
     } else {
         $out = odyno_google_groups_page_shortcut_html($isContrib, $isSigned, $id, $width, $height);
+        //add_action('wp_footer', 'odyno_google_groups_page_shortcut_js', $id, $name, $domain, $showsearch, $showtabs, $hideforumtitle, $hidesubject, $showsearch,8);
         $out .= odyno_google_groups_page_shortcut_js($id, $name, $domain, $showsearch, $showtabs, $hideforumtitle, $hidesubject, $showsearch);
     }
 
@@ -99,17 +105,19 @@ function odyno_google_groups_page_shortcut_html($isContrib, $isSigned, $id, $wid
 
     $out = '
 			<div id="' . $id . '_odynoggroups_div" class="odynoggroups_div" >
-				<iframe id="' . $id . '_ogg_forum_embed"
+				<iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+				     id="' . $id . '_ogg_forum_embed"
 			         class="odynoggroups_iframe" 
 			         src="javascript:void(0)" 
-					 scrolling="no" 
-					 frameborder="0"  
-					 width="' . $width . '" 
-					 height="' . $height . '">
+					 scrolling="no"
+					 style="border: 0; width:' . $width . '; height:' . $height . ';" >
 				</iframe>
-				<div style=\'' . $sign_inline_style . '\'>'._e('powered by <a href=\"http://www.staniscia.net/OdynoGoogleGroups/\">Odyno gGroups</a>' , 'odynogooglegroups' ) . $contribCode . '</div>
+				<div style=\'' . $sign_inline_style . '\'>' . __('powered by <a href="http://www.staniscia.net/OdynoGoogleGroups/">Odyno gGroups</a>', 'odynogooglegroups') . $contribCode . '</div>
            </div>';
 
+    if (WP_DEBUG) {
+        $out = "\n\n\n<!-- " . OGG_START_DEBUG_TAG . " -->\n\n\n" . $out . "\n\n\n<!-- " . OGG_STOP_DEBUG_TAG . " -->\n\n\n";
+    }
     return $out;
 }
 
@@ -136,6 +144,10 @@ function odyno_google_groups_page_shortcut_js(
     $out .= "&parenturl=\"+encodeURIComponent(window.location.href);";
     //NO// $out .= "&contenturl=" . urlencode(get_permalink());
     $out .= "\n</script>";
+
+    if (WP_DEBUG) {
+        $out = "\n\n\n<!-- " . OGG_START_DEBUG_TAG . " -->\n\n\n" . $out . "\n\n\n<!-- " . OGG_STOP_DEBUG_TAG . " -->\n\n\n";
+    }
     return $out;
 }
 

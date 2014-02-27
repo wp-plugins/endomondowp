@@ -3,8 +3,8 @@ Contributors: Odyno
 Tags: Google, google groups, ggroups, embed, fusion, bridge, rss, widget
 Donate link: http://www.staniscia.net/donate
 Requires at least: 3.4.2
-Tested up to: 3.6.0
-Stable tag: 0.0.6
+Tested up to: 3.8.1
+Stable tag: 0.0.7
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,11 +14,11 @@ Yes, OdynoGoogleGroups embed the Google Groups on WordPress!
 
 The [OdynoGoogleGroups](http://www.staniscia.net/odynogooglegroups/) embed the Google Groups on WordPress! You can see all discussion on your article or WordPress page. All you must do is to add a shortcode on your page editor!
 
- [Demo](http://www.staniscia.net/demo-odyno-googlegroups/)
+[Demo](http://www.staniscia.net/demo-odyno-googlegroups/)
 
 = features =
 
-* API for the extensions ( new )
+* API for the extensions
 * Embed your "custom domain" Google Group on WordPress page/post
 * Embed public Google Group forum on WordPress page/post
 * Widget with last messages of group.
@@ -91,9 +91,6 @@ Odyno Google Groups can be installed using integrated WordPress plugin installer
 
 You are ready! For example I have embed the mixare-developement comunity on my test site adn you can see the effect on screenshots section.
 
-
-
-
 == Screenshots ==
 
 1. Screenshot Shortcode on page editor [thanks to mixare.org](http://www.mixare.org)
@@ -101,9 +98,7 @@ You are ready! For example I have embed the mixare-developement comunity on my t
 3. Screenshot Configuration of widget [thanks to mixare.org](http://www.mixare.org)
 4. Screenshot Widget in action [thanks to mixare.org](http://www.mixare.org)
 
-
 == Credits ==
-
 
 Copyright 2012  Alessandro Staniscia  (email : alessandro@staniscia.net)
 
@@ -120,13 +115,11 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-
 == Changelog ==
 
-
 = 0.0.7 =
-* I18n - create all infrastructure
-* New Menu
+* I18n - Italian translation
+* BugFixs
 
 = 0.0.6 =
 * Update URL for data retrieve of Widget

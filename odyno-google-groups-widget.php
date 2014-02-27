@@ -82,6 +82,7 @@ class ODYNO_Google_Groups_Widget extends WP_Widget {
     <p>
       <label for="<?php echo $this->get_field_id('name'); ?>"><?php _e('Google Group Name:' , 'odynogooglegroups' ); ?></label><br>
       <input class="widefat" id="<?php echo $this->get_field_id('name'); ?>" name="<?php echo $this->get_field_name('name'); ?>" value="<?php echo $instance['name']; ?>"  />
+
     </p>
     <p>
       <label for="<?php echo $this->get_field_id('num_field'); ?>"><?php _e('Number of message:' , 'odynogooglegroups' ); ?></label><br>
