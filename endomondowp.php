@@ -26,17 +26,24 @@
 
 define('EWP_NAME', 'EndomondoWP');
 define('EWP_SYS_NAME', 'endomondowp');
-define('EWP_VERSION', '0.0.1');
+define('EWP_VERSION', '0.0.2');
 define('EWP_DIR', plugin_dir_path(__FILE__));
+
 
 define('EWP_LAST_WORKOUT',"last-workout");
 define('EWP_WORKOUT_LIST',"workout-list");
-define('EWP_DEFAUTL_WIDTH', "680" );
-define('EWP_DEFAUTL_HEIGHT' ,"600");
+define('EWP_CHALLENGE',"challenge");
+define('EWP_TEAM',"team");
+define('EWP_EVENT',"event");
+
+
+define('EWP_DEFAUTL_WIDTH', "600" );
+define('EWP_DEFAUTL_HEIGHT' ,"750");
 
 include_once EWP_DIR.'/install/ewp-life-cycle.php';
 include_once EWP_DIR.'/ewp-lib.php';
 include_once EWP_DIR.'/ewp-shortcode.php';
 include_once EWP_DIR.'/admin/ewp-mgt.php';
+//include_once EWP_DIR.'/ewp-media-buttom.php';
 
 ?>

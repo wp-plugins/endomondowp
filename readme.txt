@@ -1,10 +1,10 @@
 ﻿=== EndomondoWP ===
 Contributors: Odyno
-Tags: Endomondo, Sport, Traker, embedding
+Tags: Endomondo, Sport, Tracker, embedding, GPS, Fitness, Wellness
 Donate link: http://www.staniscia.net/donate
 Requires at least: 3.4.2
 Tested up to: 3.7.1
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,12 +14,14 @@ Embed Endomondo workout on Wordpress
 
 [Endomondo](http://www.endomondo.com/) is a sports community based on free real-time GPS tracking of running, cycling, etc.
 
-Bring your mobile on the track and get a complete training log. You can show your workout on Wordpress with  [EndomondoWP](http://www.staniscia.net/edomondowp/)
+Bring your mobile on the track and get a complete training log. You can show your workout on Wordpress with  [EndomondoWP](http://www.staniscia.net/endomondowp/)
 
-Download the plugin from WordPress Site, install it and add EndomondoWP on page/post.
+Download the plugin from WordPress Site, install it and add EndomondoWP on page/post, .
 
 It’s easy, add the shortcode *[ endomondowp user=“XXXX” ]* and swap *“XXXX”* with your Endomondo ID. You can find your id on URL of your endomondo profile [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com)
 
+
+= DEMO and INFO =
 You can find more [info](http://www.staniscia.net/endomondowp) and [demo of plugin](http://www.staniscia.net/workout)  on plugin homesite.
 
 
@@ -75,9 +77,11 @@ EndomondoWP can be installed using integrated WordPress plugin installer or manu
 
 
 == Screenshots ==
-
-1. Screenshot Shortcode on page editor with  *type="last-workout"*
-2. Screenshot Shortcode on page editor with  *type="workout-list"*
+1. Screenshot with all views
+2. Screenshot Shortcode *type="last-workout"*
+3. Screenshot Shortcode *type="workout-list"*
+4. Screenshot Shortcode *type="event"*
+5. Screenshot Shortcode *type="team"*
 
 
 
@@ -105,7 +109,12 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 = ToDo =
 * I18n
-* Add other View
+
+= 0.0.2 =
+* Add view event
+* Add view team
+* Add view challenge
+* Admin Changed
 
 = 0.0.1 =
 * Review Baseline

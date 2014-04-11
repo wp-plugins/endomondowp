@@ -27,17 +27,20 @@ function ewp_page_shortcode($param) {
     
     extract(shortcode_atts(array(
                 'user' => EWP_NOS,
+                'challenge_id' => null,
+                'event_id' => null,
+                'team_id' => null,
 				'id' => uniqid("", true),
-                'type' => EWP_TYPE_LAST_WORKOUT,
+                'type' => null,
                 'width' => EWP_DEFAUTL_WIDTH,
                 'height' => EWP_DEFAUTL_HEIGHT
                     ), $param));
 
-    do_action("pre_ewp_shortcode", $user, $id, $type, $width, $height);
+    do_action("pre_ewp_shortcode", $user, $challenge_id, $event_id, $team_id, $id, $type, $width, $height);
 			
-	$out=ewp_get_page($user, $id, $type, $width, $height);
+	$out=ewp_get_page($user, $challenge_id,$event_id,$team_id, $id, $type, $width, $height);
 			
-    do_action("post_ewp_shortcode", $user, $id, $type, $width, $height);
+    do_action("post_ewp_shortcode", $user, $challenge_id,$event_id,$team_id, $id, $type, $width, $height);
 
     return $out;
 }
