@@ -21,6 +21,7 @@ It’s easy, add the shortcode *[ endomondowp user=“XXXX” ]* and swap *“XX
 = DEMO and INFO =
 You can find more [info](http://www.staniscia.net/endomondowp) and [demo of plugin](http://www.staniscia.net/workout)  on plugin homesite.
 
+
 = It's opened to extensions =
 You can use it on your plugin or into "Page Template" (see [Page Templates « WordPress Codex ](http://codex.wordpress.org/Page_Templates) ) with the function do_endomondowp(...) or with 4 custom actions!!
 
@@ -85,7 +86,7 @@ EndomondoWP can be installed using integrated WordPress plugin installer or manu
 == Credits ==
 
 
-Copyright 2014  Alessandro Staniscia  (email : alessandro@staniscia.net)
+Copyright 2012  Alessandro Staniscia  (email : alessandro@staniscia.net)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as
