@@ -1,27 +1,14 @@
 <?php
-/*
-  Plugin Name: EndomondoWP
-  Plugin URI: http://www.staniscia.net/endomondowp/
-  Description: The <a href="http://www.staniscia.net/odynogooglegroups/" target="_new">EndomondoWP</a> embed the Endomondo on WordPress! You can see all workout on your article or WordPress page. All you must do is to add a shortcode on your page editor!
-  Version: 0.0.1
-  Author: Alessandro Staniscia
-  Author URI: http://www.staniscia.net
-  License: GNU General Public License v2
-
-    Copyright 2012  Alessandro Staniscia  (email : alessandro@staniscia.net)
-
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License, version 2, as
-    published by the Free Software Foundation.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+/**
+ * @wordpress-plugin
+ * Plugin Name: EndomondoWP
+ * Plugin URI: http://www.staniscia.net/endomondowp/
+ * Description: The <a href="http://www.staniscia.net/endomondowp/" target="_blank">Endomondo WP</a> embed the <a href="http://www.endomondo.com" target="_blank">Endomondo Data</a> on WordPress! You can see all your workouts on  WordPress article or  page. All you must do is to add a shortcode on your page editor!
+ * Version: 0.0.2
+ * Author: Alessandro Staniscia
+ * Author URI: http://www.staniscia.net
+ * License: GNU General Public License v2
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 */
 
 define('EWP_NAME', 'EndomondoWP');

@@ -3,23 +3,20 @@ Contributors: Odyno
 Tags: Endomondo, Sport, Tracker, embedding, GPS, Fitness, Wellness
 Donate link: http://www.staniscia.net/donate
 Requires at least: 3.4.2
-Tested up to: 3.7.1
+Tested up to: 3.8.2
 Stable tag: 0.0.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Embed Endomondo workout on Wordpress
+Embed Endomondo workouts on Wordpress Blog
 
 == Description ==
 
-[Endomondo](http://www.endomondo.com/) is a sports community based on free real-time GPS tracking of running, cycling, etc.
+[Endomondo](http://www.endomondo.com/) is a sports community based on free real-time GPS tracking of running, cycling, etc.  Bring your mobile on the track and get a complete training log. You can show your workout on Wordpress with  [Endomondo WP]( http://www.staniscia.net/endomondowp/ ).
+Download the plugin from WordPress Site, install it and add EndomondoWP on page/post
+It’s easy, add the shortcode *[ endomondowp user=“XXXX” ]* and swap *“XXXX”* with your Endomondo ID. You can find your id on URL of your endomondo profile [http://www.endomondo.com/profile/XXXX]()
 
-Bring your mobile on the track and get a complete training log. You can show your workout on Wordpress with  [EndomondoWP](http://www.staniscia.net/endomondowp/)
-
-Download the plugin from WordPress Site, install it and add EndomondoWP on page/post, .
-
-It’s easy, add the shortcode *[ endomondowp user=“XXXX” ]* and swap *“XXXX”* with your Endomondo ID. You can find your id on URL of your endomondo profile [http://www.endomondo.com/profile/XXXX](http://www.endomondo.com)
-
+[youtube  http://youtu.be/kv5JaaccCk8]
 
 = DEMO and INFO =
 You can find more [info](http://www.staniscia.net/endomondowp) and [demo of plugin](http://www.staniscia.net/workout)  on plugin homesite.
@@ -114,7 +111,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 * Add view event
 * Add view team
 * Add view challenge
-* Admin Changed
+* Admin Changed with more info
+* Bugfix and removed broken link
 
 = 0.0.1 =
 * Review Baseline

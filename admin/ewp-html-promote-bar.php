@@ -118,9 +118,9 @@
         <tr>
             <td><br><?php echo EWP_CHALLENGE; ?></td>
             <td>
-                <p><b>user*</b><br/>your id</p>
                 <p><b>challenge_id*</b><br/>id of challenge</p>
                 <p><b>type*</b><br/><?php echo EWP_CHALLENGE; ?></p>
+                <p><b>user</b><br/>your id</p>
                 <p><b>width</b><br/>the width of view (default is <?php echo EWP_DEFAUTL_WIDTH; ?>)</p>
                 <p><b>height</b><br/>the height of view (default is <?php echo EWP_DEFAUTL_HEIGHT; ?>)</p>
             </td>
