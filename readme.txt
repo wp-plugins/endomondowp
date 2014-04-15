@@ -16,7 +16,7 @@ Embed Endomondo workouts on Wordpress Blog
 Download the plugin from WordPress Site, install it and add EndomondoWP on page/post
 It’s easy, add the shortcode *[ endomondowp user=“XXXX” ]* and swap *“XXXX”* with your Endomondo ID. You can find your id on URL of your endomondo profile [http://www.endomondo.com/profile/XXXX]()
 
-[ youtube  https://www.youtube.com/watch?v=kv5JaaccCk8 ]
+[youtube https://www.youtube.com/watch?v=kv5JaaccCk8]
 
 = DEMO and INFO =
 You can find more [info](http://www.staniscia.net/endomondowp) and [demo of plugin](http://www.staniscia.net/workout)  on plugin homesite.
