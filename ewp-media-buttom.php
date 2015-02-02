@@ -1,53 +1,38 @@
 <?php
 
-/**
- *
+//Add button on media buttons context
+add_action('media_buttons_context', 'add_ewp_button');
 
-//add a button to the content editor, next to the media button
-//this button will show a popup that contains inline content
-add_action('media_buttons_context', 'add_ewp_custom_button');
+//action to add a custom button to the content editor
+function add_ewp_button($context)
+{
+    add_thickbox();
+    $img =EWP_URL."/images/logo_small.png";
+    $title = 'Add workout';
+    $context .= "<a class='button thickbox' title='{$title}' href='#TB_inline?width=800&height=800&inlineId=ewp_inline_popup_content'><img src='{$img}' />{$title}</a>";
+    return $context;
+}
 
-//add some content to the bottom of the page
-//This will be shown in the inline modal
-add_action('admin_footer', 'add_ewp_shortcode_popup_content');
+//Add inline content of the botton
+add_action('admin_footer', 'add_ewp_inline_popup_content');
+function add_ewp_inline_popup_content(){
+    echo '<div id="ewp_inline_popup_content" style="display:none;"><p>';
+    include (EWP_DIR . 'admin/ewp-html-add-shortcode.php');
+    echo '</p></div>';
+}
 
 
 
 add_action( 'admin_enqueue_scripts', 'add_ewp_custom_media_botton_js' );
-
-
-//action to add a custom button to the content editor
-function add_ewp_custom_media_botton_js()
-{
-    wp_enqueue_script( 'ewp-media-botton', plugins_url(). '/endomondowp/js/ewp-media-botton.js', array(), '1.0.0', true );
+function add_ewp_custom_media_botton_js(){
+    wp_enqueue_style( 'pure', 'http://yui.yahooapis.com/pure/0.5.0/pure-min.css' );
+    wp_enqueue_script( 'ewp-media-botton', EWP_URL.'/js/ewp-media-botton.js', array(), '1.0.0', true );
+    wp_localize_script('ewp-media-botton', 'WPURLS', array( 'ewpurl' => EWP_URL)); 
 }
 
 
-//action to add a custom button to the content editor
-function add_ewp_custom_button($context)
-{
-
-//path to my icon
-    $img =EWP_URL."/images/logo_small.png";
 
 
 
-//our popup's title
-    $title = 'Add Endomondo data';
 
-//append the icon
-    $context .= '
-      <a  id="ewp-add-shortcode" class="button thickbox" title="'.$title.'" href="#TB_inline?inlineId=ewp_popup_container"><img src="'.$img.'" /></a>';
-
-    return $context;
-}
-
-function add_ewp_shortcode_popup_content(){
-    echo '<div id="ewp_popup_container" style="display:none;">';
-    include (EWP_DIR . '/admin/ewp-html-add-shortcode.php ');
-    echo '</div>';
-}
-
- *
- *
- */
+ 

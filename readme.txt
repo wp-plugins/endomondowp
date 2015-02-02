@@ -3,8 +3,8 @@ Contributors: Odyno
 Tags: Endomondo, Sport, Tracker, embedding, GPS, Fitness, Wellness
 Donate link: http://www.staniscia.net/donate
 Requires at least: 3.4.2
-Tested up to: 3.8.2
-Stable tag: 0.0.2
+Tested up to: 3.9.2
+Stable tag: 0.0.3
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -106,6 +106,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 = ToDo =
 * I18n
+= 0.0.3 =
+* Removed new line 
 
 = 0.0.2 =
 * Add view event
