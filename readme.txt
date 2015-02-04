@@ -4,7 +4,7 @@ Tags: Endomondo, Sport, Tracker, embedding, GPS, Fitness, Wellness
 Donate link: http://www.staniscia.net/donate
 Requires at least: 3.4.2
 Tested up to: 3.9.2
-Stable tag: 0.0.3
+Stable tag: 0.0.5
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,7 +52,9 @@ The allowed action are show below and every action have the same parameter of *d
 * pre_ewp_shortcode action. It's called before invocation of all shortcode [endomondowp ...]
 * post_ewp_shortcode action. It's called after invocation of all shortcode [endomondowp ...]
 
-
+## Disclaimer, legalese and everything else.
+*This is not affiliated or endorset by Endomondo, or any other party.*
+This software available on the site is provided "as is" and any expressed or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall Alessandro Staniscia, or any of their contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.
 
 == Installation ==
 EndomondoWP can be installed using integrated WordPress plugin installer or manually.
@@ -79,6 +81,7 @@ EndomondoWP can be installed using integrated WordPress plugin installer or manu
 3. Screenshot Shortcode *type="workout-list"*
 4. Screenshot Shortcode *type="event"*
 5. Screenshot Shortcode *type="team"*
+6. Screenshot Shortcode *Edit forms*
 
 
 
@@ -106,6 +109,13 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 = ToDo =
 * I18n
+
+= 0.0.5 =
+* Added button Wordpress on editor
+
+= 0.0.4 =
+* Wrong release
+
 = 0.0.3 =
 * Removed new line 
 

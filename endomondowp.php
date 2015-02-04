@@ -4,7 +4,7 @@
  * Plugin Name: EndomondoWP
  * Plugin URI: http://www.staniscia.net/endomondowp/
  * Description: The <a href="http://www.staniscia.net/endomondowp/" target="_blank">Endomondo WP</a> embed the <a href="http://www.endomondo.com" target="_blank">Endomondo Data</a> on WordPress! You can see all your workouts on  WordPress article or  page. All you must do is to add a shortcode on your page editor!
- * Version: 0.0.3
+ * Version: 0.0.5
  * Author: Alessandro Staniscia
  * Author URI: http://www.staniscia.net
  * License: GNU General Public License v2
@@ -13,8 +13,9 @@
 
 define('EWP_NAME', 'EndomondoWP');
 define('EWP_SYS_NAME', 'endomondowp');
-define('EWP_VERSION', '0.0.3');
+define('EWP_VERSION', '0.0.5');
 define('EWP_DIR', plugin_dir_path(__FILE__));
+define('___EWP_FILE___', __FILE__);
 
 
 define('EWP_LAST_WORKOUT',"last-workout");
