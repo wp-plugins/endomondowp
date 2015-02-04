@@ -84,7 +84,9 @@ function ewp_get_page($user, $challenge_id = null, $event_id = null, $team_id = 
     $out .= '     <div style=\'' . $sign_inline_style . '\'>powered by <a href="http://www.staniscia.net/endomondowp/">EndomondoWP</a>' . $contribCode . '</div>
                </div>';
 
-    return $out;
+    
+    //strip \n and double space
+    return trim(preg_replace('/\s\s+/', ' ', $out));
 }
 
 

@@ -1,53 +1,35 @@
 <?php
 
-/**
- *
-
-//add a button to the content editor, next to the media button
-//this button will show a popup that contains inline content
-add_action('media_buttons_context', 'add_ewp_custom_button');
-
-//add some content to the bottom of the page
-//This will be shown in the inline modal
-add_action('admin_footer', 'add_ewp_shortcode_popup_content');
-
-
-
-add_action( 'admin_enqueue_scripts', 'add_ewp_custom_media_botton_js' );
-
+//Add button on media buttons context
+add_action('media_buttons_context', 'add_ewp_button');
 
 //action to add a custom button to the content editor
-function add_ewp_custom_media_botton_js()
+function add_ewp_button($context)
 {
-    wp_enqueue_script( 'ewp-media-botton', plugins_url(). '/endomondowp/js/ewp-media-botton.js', array(), '1.0.0', true );
-}
-
-
-//action to add a custom button to the content editor
-function add_ewp_custom_button($context)
-{
-
-//path to my icon
     $img =EWP_URL."/images/logo_small.png";
-
-
-
-//our popup's title
-    $title = 'Add Endomondo data';
-
-//append the icon
-    $context .= '
-      <a  id="ewp-add-shortcode" class="button thickbox" title="'.$title.'" href="#TB_inline?inlineId=ewp_popup_container"><img src="'.$img.'" /></a>';
-
+    $title = 'Add workout';
+    $context .="<li class='button' id='ewp_editor_button'><img src='{$img}'/>{$title}</li>";
     return $context;
 }
 
-function add_ewp_shortcode_popup_content(){
-    echo '<div id="ewp_popup_container" style="display:none;">';
-    include (EWP_DIR . '/admin/ewp-html-add-shortcode.php ');
+//Add inline content of the botton
+add_action('admin_footer', 'add_ewp_inline_popup_content');
+function add_ewp_inline_popup_content(){
+    echo '<div id="ewp_windows_content" title="EndomondoWP" style="display: none;" >';
+    include (EWP_DIR . 'admin/ewp-html-add-shortcode.php');
     echo '</div>';
 }
 
- *
- *
- */
+
+add_action( 'admin_enqueue_scripts', 'add_ewp_custom_style' );
+function add_ewp_custom_style(){
+    wp_enqueue_style( 'pure', 'http://yui.yahooapis.com/pure/0.5.0/pure-min.css' );
+    wp_enqueue_style( 'ewp_admin_css', plugins_url('/css/ewp-editor-style.css',___EWP_FILE___) , false, '1.0.0' );
+   
+}
+
+add_action( 'admin_enqueue_scripts', 'add_ewp_custom_js' );
+function add_ewp_custom_js(){
+    wp_enqueue_script( 'ewp-media-botton', EWP_URL.'/js/ewp-media-botton.js', array('jquery-ui-dialog','jquery-core'), '1.0.0', true );
+    wp_localize_script('ewp-media-botton', 'WPURLS', array( 'ewpurl' => EWP_URL)); 
+} 
